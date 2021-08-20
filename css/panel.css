@@ -1,0 +1,61 @@
+.panel {
+  position: relative;
+  height: 3.875rem;
+  padding: 0 .1875rem .25rem;
+  margin-bottom: .1875rem;
+  border: 1px solid rgba(25, 186, 139, 0.17);
+  background: url('../img/line.png') no-repeat rgba(255, 255, 255, 0.02);
+  background-size: 100%;
+}
+
+.panel::before {
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 10px;
+  top: 0;
+  left: 0;
+  border-top: 2px solid #02a6b5;
+  border-left: 2px solid #02a6b5;
+}
+
+.panel::after {
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 10px;
+  top: 0;
+  right: 0;
+  border-top: 2px solid #02a6b5;
+  border-right: 2px solid #02a6b5;
+}
+
+.panel-footer {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: rgb(85, 19, 19);
+}
+
+.panel-footer::before {
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 10px;
+  bottom: 0;
+  left: 0;
+  border-bottom: 2px solid #02a6b5;
+  border-left: 2px solid #02a6b5;
+}
+
+.panel-footer::after {
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 10px;
+  bottom: 0;
+  right: 0;
+  border-bottom: 2px solid #02a6b5;
+  border-right: 2px solid #02a6b5;
+}
